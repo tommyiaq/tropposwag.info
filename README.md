@@ -1,2 +1,2 @@
 # tropposwag.info
-My personal website
+My personal website, swag
