@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tommaso Iaquinta - AI Consultant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lang-switcher" style="position:absolute;top:18px;right:24px;font-size:1rem;z-index:10;">
+      <a href="index.html" onclick="localStorage.setItem('lang','en')" style="margin-right:8px; text-decoration:underline; color:#3b5bdb; font-weight:600; vertical-align:middle;">
+        <img src="https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/gb.svg" alt="English" style="width:22px;height:16px;vertical-align:middle;border-radius:2px;"> EN
+      </a> |
+      <a href="index.it.html" onclick="localStorage.setItem('lang','it')" style="margin-left:8px; text-decoration:underline; color:#3b5bdb; font-weight:600; vertical-align:middle;">
+        <img src="https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/it.svg" alt="Italiano" style="width:22px;height:16px;vertical-align:middle;border-radius:2px;"> IT
+      </a>
+    </div>
+    <script>
+      // Only redirect if no language preference is saved
+      const savedLang = localStorage.getItem('lang');
+      if (!savedLang && navigator.language && navigator.language.startsWith('it') && !window.location.pathname.endsWith('index.it.html')) {
+        window.location.href = 'index.it.html';
+      }
+    </script>
+
+  <header>
+    <img src="images/tommaso.jpg" alt="Tommaso Iaquinta" class="profile-pic" />
+    <div class="header-content">
+      <h1>Tommaso Iaquinta</h1>
+      <p>Consulente AI | Esperto NLP | Formatore</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- 🎯 Chiamata all'Azione (CTA) -->
+    <section style="text-align:center; margin-bottom:2.5rem;">
+      <a href="#contatti" class="cta-btn" style="display:inline-block; background:#3b5bdb; color:#fff; font-weight:700; padding:0.9em 2em; border-radius:8px; font-size:1.2rem; text-decoration:none; box-shadow:0 2px 8px #3b5bdb22; transition:background 0.2s; margin-bottom:1.5rem;">Contattami</a>
+      <p><a href="cv-it.pdf" download class="button">Scarica il mio CV (PDF)</a></p>
+    </section>
+    <section>
+      <h2>Chi sono</h2>
+      <p>
+        Sono un consulente AI, esperto NLP e formatore appassionato di intelligenza artificiale applicata a problemi reali. Con un dottorato in Ingegneria Informatica e una formazione in Fisica, mi occupo di NLP, innovazione di prodotto guidata dall'AI e applicazioni didattiche del machine learning. Il mio obiettivo è aiutare organizzazioni e persone a sfruttare il potere del linguaggio e dei dati.
+      </p>
+    </section>
+    <section>
+      <h2>Portfolio & Progetti</h2>
+      <ul>
+        <li><strong>Chatmenu</strong> – Primo assistente AI per ristoranti (Menumal, 2024–Presente)</li>
+        <li><strong>WebCrow</strong> – Risolutore di cruciverba con AI (<a href="https://webcrow.diism.unisi.it" target="_blank">visita</a>)</li>
+        <li><strong>Analizzatore GDPR</strong> – Progetto CLAUDETTE (<a href="http://claudette.eui.eu" target="_blank">visita</a>)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Curriculum</h2>
+      <ul>
+        <li><strong>Esperto AI</strong> – Menumal.it (2024–Presente)</li>
+        <li><strong>Docente</strong> – Informatica & Fisica, varie istituzioni italiane (2022–2025)</li>
+        <li><strong>Esperto NLP</strong> – Expert.AI (2020–2022)</li>
+        <li><strong>Formazione:</strong> Dottorato in Intelligenza Artificiale, MSc in Automazione</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Competenze</h2>
+      <ul>
+        <li><span class="icon">🔤</span>Linguaggi: Python, Java, SQL, Bash</li>
+        <li><span class="icon">🛠️</span>Strumenti: GIT, Latex, OpenOffice, Matlab</li>
+        <li><span class="icon">🌐</span>Inglese fluente (C1), Tedesco & Croato (A2)</li>
+      </ul>
+    </section>
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <div class="contact">
+        <p><span class="icon">✉️</span>Email: <a href="mailto:tommyiaq22@gmail.com">tommyiaq22@gmail.com</a></p>
+        <p><span class="icon">💼</span>LinkedIn: <a href="https://www.linkedin.com/in/tommyiaq/" target="_blank">tommyiaq</a></p>
+        <p><span class="icon">📍</span>Località: Poggibonsi, Italia</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
